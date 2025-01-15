@@ -125,3 +125,10 @@ input:focus{
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media screen and (max-width: 469px) {
+    .searchButton {
+        font-size: 10px;
+    }
+
+}
