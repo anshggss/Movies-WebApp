@@ -10,7 +10,9 @@ const navBar = () => {
       <div className="navLeft">
         <Link
           to="/"
-          className={`home ${location.pathname === "/" ? "activeNav" : ""} `}
+          className={`home ${
+            location.pathname === "/Movies-WebApp" ? "activeNav" : ""
+          } `}
         >
           Home
         </Link>
@@ -19,7 +21,7 @@ const navBar = () => {
         <Link
           to="/favorites"
           className={`favorites ${
-            location.pathname === "/favorites" ? "activeNav" : ""
+            location.pathname === "/Movies-WebApp/favorites" ? "activeNav" : ""
           }`}
         >
           Favorites
@@ -27,7 +29,7 @@ const navBar = () => {
         <Link
           to="/watch-now"
           className={`watchNow ${
-            location.pathname === "/watch-now" ? "activeNav" : ""
+            location.pathname === "/Movies-WebApp/watch-now" ? "activeNav" : ""
           }`}
         >
           Watch Now
