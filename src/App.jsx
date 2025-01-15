@@ -13,10 +13,10 @@ function App() {
   return (
     <MovieProvider>
       <NavBar />
-      <Routes>
-        <Route path="/Movies-WebApp" element={<HomePage />} />
-        <Route path="/Movies-WebApp/favorites" element={<Favorite />} />
-        <Route path="/Movies-WebApp/watch-now" element={<WatchNow />} />
+      <Routes basename="/Movies-WebApp/">
+        <Route path="/" element={<HomePage />} />
+        <Route path="/favorites" element={<Favorite />} />
+        <Route path="/watch-now" element={<WatchNow />} />
       </Routes>
     </MovieProvider>
   );
