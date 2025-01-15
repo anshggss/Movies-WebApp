@@ -1,0 +1,43 @@
+:root {
+    --dark: #212121;
+    --lighter: #A35C7A;
+    --lightest: #C890A7;
+    --almost-white: #FBF5E5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.efavoritePage{
+    background-color: var(--dark);
+    height: 91.5vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.efavHeading, .efavPara{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.favoriteContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--dark);
+}
+
+@media screen{
+    .favoriteContainer{
+        height: 80%;
+    }
+}
+
+
