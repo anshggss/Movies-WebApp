@@ -4,7 +4,6 @@ import MovieCard from "../../movieCard/movieCard";
 import { useState } from "react";
 import { useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../../services/api";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");

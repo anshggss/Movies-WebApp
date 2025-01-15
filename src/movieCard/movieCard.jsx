@@ -1,5 +1,4 @@
 import "./movieCard.css";
-import { useState } from "react";
 import { useMovieContext } from "../services/context";
 
 function movieCard({ movie }) {
